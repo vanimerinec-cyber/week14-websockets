@@ -1,0 +1,36 @@
+﻿Γùç injected env (5) from .env // tip: Γùê secrets for agents [www.dotenvx.com]
+[SYSTEM] Attempting to connect to MongoDB Atlas...
+[CACHE] Successfully connected to Upstash Redis REST Client!
+[SYSTEM] Server listening on http://localhost:3000
+[SYSTEM] Ready for Local Sandbox connection! Mocks enabled for zeroconfig startup.
+[DATABASE] Successfully connected to MongoDB Atlas!
+[WS] User jerica connected. Total client tabs:
+1
+node : C:\Users\User\OneDrive\Documents\week14_websockets\node_modules\@upstash
+\redis\nodejs.js:226
+At line:1 char:1
++ node server.js 2>&1 | Out-File server_run.log -Encoding utf8; if (Tes ...
++ ~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (C:\Users\User\O...s\nodejs.js:226 
+   :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+      throw new UpstashError(`${body2.error}, command was: 
+${JSON.stringify(req.body)}`);
+            ^
+
+UpstashError: WRONGPASS invalid or missing auth token. See 
+https://docs.upstash.com/redis/troubleshooting/http_unauthorized for details., 
+command was: [["sadd","online_users","jerica"]]
+    at HttpClient.request (C:\Users\User\OneDrive\Documents\week14_websockets\n
+ode_modules\@upstash\redis\nodejs.js:226:13)
+    at process.processTicksAndRejections 
+(node:internal/process/task_queues:105:5)
+    at async Pipeline.exec (C:\Users\User\OneDrive\Documents\week14_websockets\
+node_modules\@upstash\redis\nodejs.js:3482:17)
+    at async AutoPipelineExecutor.withAutoPipeline (C:\Users\User\OneDrive\Docu
+ments\week14_websockets\node_modules\@upstash\redis\nodejs.js:548:21)
+    at async WebSocketServer.<anonymous> 
+(C:\Users\User\OneDrive\Documents\week14_websockets\server.js:636:2)
+
+Node.js v22.14.0
