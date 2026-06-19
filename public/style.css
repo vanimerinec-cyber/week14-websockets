@@ -1,35 +1,35 @@
 /* public/style.css */
 :root {
- --bg-dark: #0a0612;
- --bg-gradient: linear-gradient(135deg, #0a0612 0%, #110920 50%, #1a0a2e 100%);
- --glass-bg: rgba(18, 8, 35, 0.65);
- --glass-border: rgba(160, 100, 255, 0.12);
- --glass-highlight: rgba(160, 100, 255, 0.04);
+ --bg-dark: #1a0606;
+ --bg-gradient: linear-gradient(135deg, #1a0606 0%, #2b0a0a 50%, #3d0d0d 100%);
+ --glass-bg: rgba(40, 8, 8, 0.65);
+ --glass-border: rgba(239, 68, 68, 0.14);
+ --glass-highlight: rgba(239, 68, 68, 0.04);
 
- --text-primary: #f1f0ff;
- --text-secondary: #b8a8d4;
- --text-muted: #7a6899;
+ --text-primary: #fff5f0;
+ --text-secondary: #d8b0ac;
+ --text-muted: #997270;
 
- /* Purple Gradients */
- --accent-gradient: linear-gradient(135deg, #a855f7 0%, #7c3aed 100%);
- --accent-hover-gradient: linear-gradient(135deg, #b96dff 0%, #8b4ff5 100%);
- --button-secondary-bg: rgba(168, 85, 247, 0.08);
- --button-secondary-hover: rgba(168, 85, 247, 0.16);
+ /* Red Gradients */
+ --accent-gradient: linear-gradient(135deg, #ef4444 0%, #b91c1c 100%);
+ --accent-hover-gradient: linear-gradient(135deg, #f87171 0%, #dc2626 100%);
+ --button-secondary-bg: rgba(239, 68, 68, 0.08);
+ --button-secondary-hover: rgba(239, 68, 68, 0.16);
 
- --bubble-me-gradient: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);
- --bubble-other-bg: rgba(160, 100, 255, 0.08);
- --bubble-other-border: rgba(160, 100, 255, 0.06);
+ --bubble-me-gradient: linear-gradient(135deg, #b91c1c 0%, #ef4444 100%);
+ --bubble-other-bg: rgba(239, 68, 68, 0.08);
+ --bubble-other-border: rgba(239, 68, 68, 0.06);
 
  /* Semantic Status */
  --status-green: #10b981;
- --status-red: #f43f5e;
+ --status-red: #fb7185;
  --status-amber: #f59e0b;
 
  --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
  --font-body: 'Plus Jakarta Sans', -apple-system, sans-serif;
 
  --shadow-premium: 0 20px 50px rgba(0, 0, 0, 0.5);
- --shadow-glow: 0 0 20px rgba(168, 85, 247, 0.3);
+ --shadow-glow: 0 0 20px rgba(239, 68, 68, 0.3);
 
  --transition-smooth: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
@@ -65,13 +65,13 @@ body::before, body::after {
 body::before {
  top: 10%;
  left: 10%;
- background: #7c3aed;
+ background: #b91c1c;
  animation: floatOrb 12s infinite alternate ease-in-out;
 }
 body::after {
  bottom: 10%;
  right: 10%;
- background: #a855f7;
+ background: #ef4444;
  animation: floatOrb 15s infinite alternate-reverse ease-in-out;
 }
 @keyframes floatOrb {
@@ -254,12 +254,12 @@ body::after {
  border-radius: 6px;
 }
 .toggle-password-btn:hover {
- color: #a855f7;
- background: rgba(168, 85, 247, 0.1);
+ color: #ef4444;
+ background: rgba(239, 68, 68, 0.1);
 }
 .input-wrapper input:focus {
- border-color: #a855f7;
- background: rgba(168, 85, 247, 0.08);
+ border-color: #ef4444;
+ background: rgba(239, 68, 68, 0.08);
  box-shadow: var(--shadow-glow);
 }
 /* Avatar presets grid */
@@ -289,8 +289,8 @@ body::after {
  transform: translateY(-2px);
 }
 .avatar-option.selected {
- border-color: #a855f7;
- background: rgba(168, 85, 247, 0.12);
+ border-color: #ef4444;
+ background: rgba(239, 68, 68, 0.12);
 }
 .avatar-option img {
  width: 44px;
@@ -309,12 +309,12 @@ body::after {
  font-size: 15px;
  cursor: pointer;
  transition: var(--transition-smooth);
- box-shadow: 0 4px 20px rgba(124, 58, 237, 0.3);
+ box-shadow: 0 4px 20px rgba(185, 28, 28, 0.3);
 }
 .auth-btn:hover {
  background: var(--accent-hover-gradient);
  transform: translateY(-1px);
- box-shadow: 0 6px 24px rgba(124, 58, 237, 0.5);
+ box-shadow: 0 6px 24px rgba(185, 28, 28, 0.5);
 }
 .auth-btn:active {
  transform: translateY(1px);
@@ -355,7 +355,7 @@ body::after {
 .sidebar {
  width: 280px;
  border-right: 1px solid var(--glass-border);
- background: rgba(10, 4, 22, 0.5);
+ background: rgba(2, 10, 25, 0.5);
  display: flex;
  flex-direction: column;
  flex-shrink: 0;
@@ -374,7 +374,7 @@ body::after {
 }
 .brand-icon {
  font-size: 24px;
- filter: drop-shadow(0 2px 5px rgba(168, 85, 247, 0.4));
+ filter: drop-shadow(0 2px 5px rgba(239, 68, 68, 0.4));
 }
 .brand-name {
  font-family: var(--font-heading);
@@ -535,7 +535,7 @@ body::after {
  height: 10px;
  border-radius: 50%;
  background-color: var(--status-green);
- border: 2px solid #0a0612;
+ border: 2px solid #1a0606;
 }
 .online-user-name {
  font-size: 13.5px;
@@ -669,7 +669,7 @@ body::after {
  color: #ffffff;
  font-weight: 500;
  border-top-right-radius: 4px;
- box-shadow: 0 4px 15px rgba(124, 58, 237, 0.25);
+ box-shadow: 0 4px 15px rgba(185, 28, 28, 0.25);
 }
 .msg-wrapper.other .msg-bubble {
  background: var(--bubble-other-bg);
@@ -704,8 +704,8 @@ body::after {
  transition: var(--transition-smooth);
 }
 .composer-input-wrapper input:focus {
- border-color: #a855f7;
- background: rgba(168, 85, 247, 0.08);
+ border-color: #ef4444;
+ background: rgba(239, 68, 68, 0.08);
  box-shadow: var(--shadow-glow);
 }
 .composer-input-wrapper input:disabled {
@@ -727,12 +727,12 @@ body::after {
  align-items: center;
  justify-content: center;
  gap: 8px;
- box-shadow: 0 4px 14px rgba(124, 58, 237, 0.35);
+ box-shadow: 0 4px 14px rgba(185, 28, 28, 0.35);
 }
 .composer-send-btn:hover:not(:disabled) {
  background: var(--accent-hover-gradient);
  transform: translateY(-1px);
- box-shadow: 0 6px 18px rgba(124, 58, 237, 0.55);
+ box-shadow: 0 6px 18px rgba(185, 28, 28, 0.55);
 }
 .composer-send-btn:active:not(:disabled) {
  transform: translateY(1px);
@@ -836,7 +836,7 @@ body::after {
 }
 .add-group-btn:hover {
  background: var(--accent-gradient);
- color: #070a13;
+ color: #ffffff;
  transform: rotate(90deg) scale(1.1);
  box-shadow: var(--shadow-glow);
 }
@@ -881,7 +881,7 @@ body::after {
 }
 .unread-badge {
  background: var(--accent-gradient);
- color: #070a13;
+ color: #ffffff;
  font-size: 10px;
  font-weight: 700;
  padding: 2px 7px;
@@ -992,7 +992,7 @@ body::after {
  width: 100%;
 }
 .member-select-label input[type="checkbox"] {
- accent-color: #a855f7;
+ accent-color: #ef4444;
  width: 16px;
  height: 16px;
 }
